@@ -6,8 +6,8 @@ export default function Introduction() {
     return (
         <section  className="py-28 lg:40">
             <div className="container">
-                <div className="flex justify-center">
-                <Tag>Introducing Creatathon</Tag> 
+                <div className="flex items-center justify-center">
+                <Tag className="flex justify-center items-center font-medium">Introducing Creatathon</Tag> 
                 </div>
                 <div className="text-4xl md:text-6xl lg:text-7xl text-center font-medium mt-10">                  
                     <span>"You create, we help you grow." </span>{""}
