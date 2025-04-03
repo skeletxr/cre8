@@ -21,7 +21,7 @@ const features = [
 export default function Features() {
     return (
         <section className="py-24">
-            <div className="container">
+            <div className="container sm:max-w-[447px] md:max-w-[768px] lg:min-w-[1200px]">
                 <div className="flex items-center justify-center">
                     <Tag className="flex items-center justify-center font-medium">
                         Why choose us?
@@ -101,16 +101,16 @@ export default function Features() {
                         </div>
                     </FeatureCard>
                 </div>
-                <div className="mt-8 grid grid-cols-2 gap-0 sm:gap-3 sm:grid-cols-none sm:flex sm:flex-wrap sm:justify-center">
+                <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-none sm:flex sm:flex-wrap sm:justify-center">
                     {features.map((feature) => (
                         <div
                             key={feature}
-                            className="bg-neutral-900 border-0 sm:border sm:border-white/10 flex px-0 sm:px-3 md:px-5 py-0 sm:py-1.5 md:py-2 rounded-none sm:rounded-lg md:rounded-2xl gap-0 sm:gap-2 md:gap-3 items-center w-[calc(50%-2px)] sm:w-auto m-[1px] sm:m-0 h-3 sm:h-auto"
+                            className="bg-neutral-900 border border-white/10 flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 items-center"
                         >
-                            <span className="bg-lime-400 text-neutral-950 size-1.5 sm:size-4 md:size-5 rounded-full hidden sm:inline-flex justify-center items-center text-[6px] sm:text-sm md:text-xl flex-shrink-0">
+                            <span className="bg-lime-400 text-neutral-950 size-5 rounded-full inline-flex justify-center items-center text-xl">
                                 ★
                             </span>
-                            <span className="font-medium text-[3px] sm:text-sm md:text-lg truncate text-center w-full sm:w-auto sm:text-left leading-[6px] sm:leading-normal p-0 sm:py-1 overflow-hidden">
+                            <span className="font-medium md:text-lg truncate">
                                 {feature}
                             </span>
                         </div>
